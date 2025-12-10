@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Northbound Consulting — Founder & CEO</title>
+  <meta name="description" content="Northbound Consulting — Product Marketing, AI GTM Engineering, Founder-Led Personal Branding, and AI Automation to build repeatable growth." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site">
+    <header class="site-header container">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="Northbound Consulting logo" class="site-logo" />
+        <div class="brand-text">
+          <h1 id="companyName" class="logo">Northbound Consulting</h1>
+          <p id="role" class="role">Founder &amp; CEO</p>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="editToggle" class="btn">Edit</button>
+        <button id="saveBtn" class="btn ghost" title="Download current copy as JSON">Save</button>
+        <input id="loadInput" type="file" accept="application/json" style="display:none" />
+        <button id="loadBtn" class="btn ghost" title="Load a previously saved JSON file">Load</button>
+        <button id="resetBtn" class="btn ghost danger" title="Reset to the original starter copy">Reset</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-left">
+          <h2 id="heroTitle">We help founders & companies at every stage of their growth journey</h2>
+          <p id="heroSubtitle" class="muted">By combining Product Marketing, AI GTM Engineering, Founder-Led Personal Branding, and AI Automation, we create one connected system that drives repeatable growth.</p>
+          <div class="cta-row">
+            <a id="ctaLink" class="cta" href="#contact">Get in touch</a>
+            <a class="secondary" href="#services">What I do</a>
+          </div>
+        </div>
+        <div class="hero-right decorative" aria-hidden="true">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0%" stop-color="#0b6bf2" stop-opacity="0.18"/>
+                <stop offset="100%" stop-color="#6e44ff" stop-opacity="0.08"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="200" height="200" rx="20" fill="url(#g)"/>
+            <circle cx="60" cy="60" r="30" fill="#fff" opacity="0.06"/>
+            <circle cx="140" cy="120" r="44" fill="#fff" opacity="0.05"/>
+          </svg>
+        </div>
+      </section>
+
+      <section id="services" class="container cards">
+        <h3 class="section-title">Services</h3>
+        <div class="grid">
+          <article class="card">
+            <h4 id="svc1Title">Product Positioning &amp; Messaging</h4>
+            <p id="svc1Desc">Find your narrative and positioning that truly converts with Product Marketing.</p>
+          </article>
+
+          <article class="card">
+            <h4 id="svc2Title">AI GTM Engineering</h4>
+            <p id="svc2Desc">Build outbound and demand workflows powered by AI to scale outreach and qualification.</p>
+          </article>
+
+          <article class="card">
+            <h4 id="svc3Title">Founder-Led Personal Branding</h4>
+            <p id="svc3Desc">Turn founders into category voices on LinkedIn and other platforms.</p>
+          </article>
+
+          <article class="card">
+            <h4 id="svc4Title">AI Automation &amp; Custom Agents</h4>
+            <p id="svc4Desc">AI automation across industries to reduce manual work and speed growth.</p>
+          </article>
+
+          <article class="card">
+            <h4 id="svc5Title">GTM Strategy &amp; Execution</h4>
+            <p id="svc5Desc">Move from a reactive GTM to a scalable growth engine: strategy, playbooks, and execution.</p>
+          </article>
+
+          <article class="card">
+            <h4 id="svc6Title">Market Research &amp; Sales Enablement</h4>
+            <p id="svc6Desc">Competitor analysis, market insights, and sales enablement to find product-market fit alignment.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="testimonials" class="container testimonials">
+        <h3 class="section-title">Companies I’ve Consulted For</h3>
+        <div id="testimonialsGrid" class="test-grid" aria-live="polite">
+          <!-- Company names rendered here by scripts.js -->
+        </div>
+      </section>
+
+      <section id="clock" class="container clock-section">
+        <h3 class="section-title">Current Time (select time zones)</h3>
+        <div class="clock-controls">
+          <label><input id="toggleSeconds" type="checkbox" checked /> Show seconds</label>
+          <label><input id="toggle24" type="checkbox" /> 24-hour</label>
+        </div>
+        <div id="clockGrid" class="clock-grid" aria-live="polite">
+          <div class="tz-card" data-timezone="local">
+            <div class="tz-label">Local</div>
+            <div class="tz-time">—</div>
+            <div class="tz-date">—</div>
+          </div>
+
+          <div class="tz-card" data-timezone="America/Los_Angeles">
+            <div class="tz-label">San Francisco</div>
+            <div class="tz-time">—</div>
+            <div class="tz-date">—</div>
+          </div>
+
+          <div class="tz-card" data-timezone="America/New_York">
+            <div class="tz-label">New York</div>
+            <div class="tz-time">—</div>
+            <div class="tz-date">—</div>
+          </div>
+
+          <div class="tz-card" data-timezone="Europe/London">
+            <div class="tz-label">London</div>
+            <div class="tz-time">—</div>
+            <div class="tz-date">—</div>
+          </div>
+
+          <div class="tz-card" data-timezone="Asia/Kolkata">
+            <div class="tz-label">Mumbai</div>
+            <div class="tz-time">—</div>
+            <div class="tz-date">—</div>
+          </div>
+
+          <div class="tz-card" data-timezone="Asia/Tokyo">
+            <div class="tz-label">Tokyo</div>
+            <div class="tz-time">—</div>
+            <div class="tz-date">—</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="container about">
+        <h3 class="section-title">About</h3>
+        <div class="about-inner">
+          <div class="about-photo">
+            <img id="aboutImage" src="assets/me.jpg" alt="Portrait" />
+            <input id="photoInput" type="file" accept="image/*" style="display:none" />
+            <div class="photo-controls">
+              <button id="changePhotoBtn" class="btn ghost">Change photo</button>
+              <button id="removePhotoBtn" class="btn ghost danger" title="Remove photo and restore placeholder">Remove</button>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <p id="aboutText">I help founders & companies at every stage of their growth journey, whether they're finding Product positioning and messaging, competitor analysis, content marketing, market research, sales enablement, branding, market insights for product-market fit alignment, and building your GTM engine.</p>
+            <p id="aboutText2" class="muted small">By combining Product Marketing, AI GTM Engineering, Founder-Led Personal Branding, and AI Automation, I create one connected system that drives repeatable growth.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container contact">
+        <h3 class="section-title">Contact</h3>
+        <p id="contactText">Email or visit: <a id="contactLink" href="https://baseworkconsulting.com" target="_blank" rel="noopener">baseworkconsulting.com</a></p>
+        <p class="muted small">Prefer a contact form or calendly integration? You can add that later — this starter keeps things simple for recruiter walkthroughs.</p>
+      </section>
+
+      <section class="container footer-note">
+        <p class="muted small">Role shown: <span id="footerRole">Founder &amp; CEO</span> • Minimalist, editable, single-file content with Save/Load for quick edits.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <small>&copy; <span id="year"></span> Northbound Consulting</small>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

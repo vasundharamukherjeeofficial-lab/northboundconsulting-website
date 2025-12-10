@@ -1,0 +1,30 @@
+<!-- Minimal, scalable logo for Northbound Consulting: a stylized "N" + north arrow mark -->
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Northbound Consulting logo</title>
+  <desc id="desc">Monogram with north-pointing arrow and company name mark in blue and purple gradient</desc>
+  <defs>
+    <linearGradient id="lg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0b6bf2"/>
+      <stop offset="100%" stop-color="#6e44ff"/>
+    </linearGradient>
+    <style>
+      .mark { fill: url(#lg); }
+      .background { fill: none; }
+      .nb { fill: #0f1724; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; font-weight:700; font-size:96px; }
+    </style>
+  </defs>
+
+  <!-- circular mark with north arrow and subtle chevron -->
+  <g transform="translate(56 48)">
+    <rect width="400" height="400" rx="48" class="background"/>
+    <g transform="translate(200 200) scale(1)">
+      <!-- arrow shaft -->
+      <path class="mark" d="M0 -110 L14 10 L6 10 L6 110 L-6 110 L-6 10 L-14 10 Z" />
+      <!-- arrow head / north chevron -->
+      <path class="mark" d="M0 -140 L42 -60 L14 -60 L14 -16 L-14 -16 L-14 -60 L-42 -60 Z" />
+    </g>
+  </g>
+
+  <!-- optional "Northbound" wordmark inside the SVG for fallback usage when used alone -->
+  <text x="64" y="472" class="nb">Northbound</text>
+</svg>
